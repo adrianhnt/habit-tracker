@@ -1,14 +1,25 @@
 :root {
+    --color-lightgrey: #EEF0F2;
     --color-offwhite: #F9F9F9;
     --color-navy-blue-primary: #092634;
     --color-blue-primary: #004E72;
     --color-orange-primary: #FF6E42;
+
+    --borderradius-default: 8px
 }
 
 body {
-    background: var(--color-offwhite);
+    background: var(--color-lightgrey);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     color: var(--color-navy-blue-primary);
+}
+
+.card {
+    background: var(--color-offwhite);
+    border: 1px solid var(--color-blue-primary);
+    border-radius: var(--borderradius-default);
+    padding: 24px
 }
