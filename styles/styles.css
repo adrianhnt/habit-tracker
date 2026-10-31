@@ -2,6 +2,7 @@
     --color-lightgrey: #EEF0F2;
     --color-offwhite: #F9F9F9;
     --color-navy-blue-primary: #092634;
+    --color-navy-blue-10: #0926341A;
     --color-blue-primary: #004E72;
     --color-orange-primary: #FF6E42;
 
@@ -22,4 +23,51 @@ h1, h2, h3, h4, h5, h6, p {
     border: 1px solid var(--color-blue-primary);
     border-radius: var(--borderradius-default);
     padding: 24px
+}
+
+button {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: var(--borderradius-default);
+    border: none;
+    cursor: pointer;
+    padding: 0 24px;
+}
+
+.button-s {
+    height: 32px;
+}
+
+.button-m {
+    height: 40px;
+}
+
+.button-l {
+    height: 48px;
+}
+
+.button-m {
+    height: 40px;
+}
+
+.button-primary {
+    background: var(--color-blue-primary);
+    color: var(--color-offwhite);
+}
+
+.button-secondary {
+    background: none;
+    color: var(--color-navy-blue-primary);
+    border: 1px solid var(--color-blue-primary);
+}
+
+.button-tertiary {
+    background: none;
+    color: var(--color-navy-blue-primary);
+    border: none;
+}
+
+.button-secondary:hover, .button-tertiary:hover {
+    background: var(--color-navy-blue-10);
 }
