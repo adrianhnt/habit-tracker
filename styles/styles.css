@@ -25,6 +25,31 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 24px
 }
 
+nav {
+    background: var(--color-blue-primary);
+    padding: 8px;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+nav ul li {
+    color: var(--color-offwhite);
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-offwhite);
+}
+
+nav ul .active {
+    color: var(--color-orange-primary);
+    text-decoration: underline;
+}
+
 button {
     box-sizing: border-box;
     font-size: 1rem;
